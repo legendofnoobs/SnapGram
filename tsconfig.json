@@ -1,3 +1,4 @@
+//<<<<<<< Tabnine <<<<<<<
 {
   "files": [],
   "references": [
@@ -6,7 +7,8 @@
   ],
   "compilerOptions": {
     "module": "esnext",
-    "resolveJsonModule": true,
+    //"resolveJsonModule": true,//-
+    "resolveJsonModule": false, // Changed to false//+
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
@@ -15,3 +17,4 @@
     }
   }
 }
+//>>>>>>> Tabnine >>>>>>>// {"conversationId":"b2137679-0424-401f-908c-8eef4739b393","source":"instruct"}
