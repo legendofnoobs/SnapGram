@@ -1,20 +1,53 @@
-//<<<<<<< Tabnine <<<<<<<
+// //<<<<<<< Tabnine <<<<<<<
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ],
+//   "compilerOptions": {
+//     "module": "esnext",
+//     //"resolveJsonModule": true,//-
+//     "resolveJsonModule": true, // Changed to false//+
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     }
+//   }
+// }
+// //>>>>>>> Tabnine >>>>>>>// {"conversationId":"b2137679-0424-401f-908c-8eef4739b393","source":"instruct"}
+
+
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
   "compilerOptions": {
-    "module": "esnext",
-    //"resolveJsonModule": true,//-
-    "resolveJsonModule": false, // Changed to false//+
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // shadcn
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
-//>>>>>>> Tabnine >>>>>>>// {"conversationId":"b2137679-0424-401f-908c-8eef4739b393","source":"instruct"}
