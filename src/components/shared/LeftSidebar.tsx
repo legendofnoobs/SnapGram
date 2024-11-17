@@ -35,7 +35,6 @@ const LeftSidebar = () => {
 						height={36}
 					/>
 				</Link>
-				{console.log('User Image URL:', user.imageUrl)}
 
 				{isLoading || !user.email ? (
 					<div className="h-14">
