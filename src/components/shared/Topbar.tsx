@@ -30,7 +30,10 @@ const Topbar = () => {
 					<Button
 						variant="ghost"
 						className="shad-button_ghost"
-						onClick={() => signOut()}>
+						onClick={() => {
+							signOut();
+							navigate("/sign-in");
+							}}>
 						<img src="/assets/icons/logout.svg" alt="logout" />
 					</Button>
 					<Link to={`/profile/${user.id}`} className="flex-center gap-3">
