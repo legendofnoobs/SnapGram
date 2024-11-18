@@ -1,25 +1,3 @@
-// //<<<<<<< Tabnine <<<<<<<
-// {
-//   "files": [],
-//   "references": [
-//     { "path": "./tsconfig.app.json" },
-//     { "path": "./tsconfig.node.json" }
-//   ],
-//   "compilerOptions": {
-//     "module": "esnext",
-//     //"resolveJsonModule": true,//-
-//     "resolveJsonModule": true, // Changed to false//+
-//     "esModuleInterop": true,
-//     "allowSyntheticDefaultImports": true,
-//     "baseUrl": ".",
-//     "paths": {
-//       "@/*": ["./src/*"]
-//     }
-//   }
-// }
-// //>>>>>>> Tabnine >>>>>>>// {"conversationId":"b2137679-0424-401f-908c-8eef4739b393","source":"instruct"}
-
-
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -42,7 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    // shadcn
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
