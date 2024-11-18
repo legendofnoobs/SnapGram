@@ -37,7 +37,7 @@ const LeftSidebar = () => {
 				</Link>
 
 				{isLoading || !user.email ? (
-					<div className="h-14 flex gap-x-5">
+					<div className="h-14 flex gap-x-5 items-center">
 						<Loader />
 						<div>
 							<p>you are a guest,</p> 
