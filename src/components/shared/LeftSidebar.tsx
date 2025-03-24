@@ -40,7 +40,7 @@ const LeftSidebar = () => {
 					<div className="h-14 flex gap-x-5 items-center">
 						<Loader />
 						<div>
-							<p>you are a guest,</p> 
+							<p>you are a guest,</p>
 							<p>Sign in please</p>
 						</div>
 					</div>
@@ -84,13 +84,23 @@ const LeftSidebar = () => {
 				</ul>
 			</div>
 
-			<Button
+			{isLoading || !user.email ? (
+				<Button
+					variant="ghost"
+					className="shad-button_ghost"
+					onClick={(e) => handleSignOut(e)}>
+					<img src="/assets/icons/logout.svg" alt="logout" />
+					<p className="small-medium lg:base-medium">Sign In</p>
+				</Button>
+			) : (<Button
 				variant="ghost"
 				className="shad-button_ghost"
 				onClick={(e) => handleSignOut(e)}>
 				<img src="/assets/icons/logout.svg" alt="logout" />
 				<p className="small-medium lg:base-medium">Logout</p>
-			</Button>
+			</Button>)}
+
+
 		</nav>
 	);
 };

@@ -143,11 +143,23 @@ const PostDetails = () => {
 				<h3 className="body-bold md:h3-bold w-full my-10">
 					More Related Posts
 				</h3>
-				{isUserPostLoading || !relatedPosts ? (
-					<Loader />
-				) : (
-					<GridPostList posts={relatedPosts} />
-				)}
+				{isUserPostLoading && (
+					<div>
+						<Loader />
+					</div>
+				) }
+				{
+					!relatedPosts ? (
+						<p></p>
+					) : (
+						<GridPostList posts={relatedPosts} />
+					)
+				}
+				{
+					relatedPosts?.length == 0 && (
+						<p>This user has no more posts</p>
+					) 
+				}
 			</div>
 		</div>
 	);
